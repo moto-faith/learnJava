@@ -4,6 +4,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Demo01 {
     public static void main(String[] args) throws Exception {
@@ -170,6 +173,62 @@ public class Demo01 {
 //            System.out.print(entry.getKey());
 //            System.out.println(entry.getValue());
 //        }
+
+//        HashMap<Student,String> map = new HashMap<>();
+//        map.put(new Student("a",1),"bj");
+//        map.put(new Student("b",2),"hn");
+//        map.put(new Student("c",3),"jp");
+//        Set<Student> sets = map.keySet();
+//        for (Student set : sets) {
+//            String s = map.get(set);
+//            System.out.println(set.toString()+"---"+s);
+//        }
+
+//        MyThread mt = new MyThread("Th");
+//        mt.start();
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println("Thread=="+i);
+//        }
+
+//        MyRunnable mr= new MyRunnable();
+//        Thread t = new Thread(mr);
+//        t.start();
+
+//        Runnable runnable = new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i = 0; i < 20; i++) {
+//                    System.out.println("aa" + i);
+//                }
+//            }
+//        };
+//        new Thread(runnable).start();
+
+//        Ticket ticket = new Ticket();
+//        Thread window1 = new Thread(ticket, "window1");
+//        Thread window2 = new Thread(ticket, "window2");
+//        Thread window3 = new Thread(ticket, "window3");
+//        window1.start();
+//        window2.start();
+//        window3.start();
+
+//        BaoZi bz = new BaoZi();
+//        ChiHuo ch = new ChiHuo("吃货",bz);
+//        BaoZiPu bzp = new BaoZiPu("包子铺",bz);
+//
+//        ch.start();
+//        bzp.start();
+
+//        ExecutorService service = Executors.newFixedThreadPool(2);
+//        MyRunnable r = new MyRunnable();
+//        service.submit(r);
+//        service.submit(r);
+//        service.submit(r);
+
+        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+
 
     }
 //    public static int getSum(int...arr){
