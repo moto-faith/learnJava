@@ -1,5 +1,6 @@
 package com.learn.java;
 
+import java.io.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -225,9 +226,146 @@ public class Demo01 {
 //        service.submit(r);
 //        service.submit(r);
 
-        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
-        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
-        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+//        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+//        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+//        new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+
+//        File file = new File("a.txt");
+//        System.out.println(file.getAbsolutePath());
+//        System.out.println(file.getPath());
+//        System.out.println(file.getName());
+//        System.out.println(file.length());
+//        System.out.println(file.exists());
+//        System.out.println(file.isDirectory());
+//        System.out.println(file.isFile());
+//        System.out.println(file.createNewFile());
+//        System.out.println(file.mkdirs());
+//        System.out.println(file.delete());
+//        File file1 = new File("E:\\xupeng\\javatest\\src\\com\\learn\\java");
+//        String[] list = file1.list();
+//        for (String s : list) {
+//            System.out.println(s);
+//        }
+//        File[] files = file1.listFiles();
+//        for (File file2 : files) {
+//            System.out.println(file2.isFile());
+//        }
+
+//        File file = new File("a.txt");
+//        FileOutputStream fos = new FileOutputStream(file);
+//        fos.write(97);
+//        fos.write(98);
+//        fos.write(99);
+//        fos.write("\r".getBytes());
+//        fos.write("程序员".getBytes());
+//        fos.close();
+
+//        FileInputStream fis = new FileInputStream("a.txt");
+//        int read ;
+//        byte[] b = new byte[3];
+//        while ((read=fis.read(b))!=-1){
+//            System.out.print(new String(b,0,read));
+//        }
+//        fis.close();
+
+//        FileReader fr = new FileReader("a.txt");
+//        int line;
+//        char[] b= new char[2];
+//        while ((line=fr.read(b))!=-1){
+//            System.out.print(new String(b,0,line));
+//        }
+//        fr.close();
+
+//        FileWriter fw = new FileWriter("a.txt");
+//        fw.write("关闭刷新");
+//        fw.close();
+
+//        Properties properties = new Properties();
+//        properties.setProperty("a","1");
+//        properties.setProperty("b","2");
+//        properties.setProperty("c","3");
+//        System.out.println(properties);
+//        System.out.println(properties.getProperty("a"));
+//        Set<String> strings = properties.stringPropertyNames();
+//        for (String string : strings) {
+//            System.out.println(string+":"+properties.getProperty(string));
+//        }
+
+//        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("a.txt"));
+//        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("b.txt"));
+//        int line;
+//        byte[] bytes = new byte[1024];
+//        while ((line=bis.read(bytes))!=-1){
+//            bos.write(bytes,0,line);
+//        }
+//        bis.close();
+//        bos.close();
+
+//        BufferedReader br = new BufferedReader(new FileReader("a.txt"));
+//        String line;
+//        while ((line=br.readLine())!=null){
+//            System.out.println(line);
+//            System.out.println("-----");
+//        }
+//        br.close();
+//
+//        BufferedWriter bw = new BufferedWriter(new FileWriter("b.txt"));
+//        bw.write("程序");
+//        bw.newLine();
+//        bw.write("员");
+//        bw.close();
+
+//        HashMap<String,String> lineMap = new HashMap<>();
+//        BufferedReader br = new BufferedReader(new FileReader("a.txt"));
+//        BufferedWriter bw = new BufferedWriter(new FileWriter("b.txt"));
+//        String line;
+//        while ((line=br.readLine())!=null){
+//            String[] split = line.split("\\.");
+//            lineMap.put(split[0],split[1]);
+//        }
+//        br.close();
+//
+//        for (int i =1;i<=lineMap.size();i++){
+//            String key = String.valueOf(i);
+//            String value = lineMap.get(key);
+//            bw.write(key+"."+value);
+//            bw.newLine();
+//        }
+//        bw.close();
+
+
+//        InputStreamReader isr = new InputStreamReader(new FileInputStream("a.txt"),"gbk");
+//        int len;
+//        while ((len=isr.read())!=-1){
+//            System.out.println((char)len);
+//        }
+
+//        Employee e = new Employee();
+//        e.name = "zhangsan";
+//        e.address = "beiqinglu";
+//        e.age = 20;
+//        try {
+//            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("a.txt"));
+//            out.writeObject(e);
+//            out.close();
+//
+//        }catch (IOException i){
+//            i.printStackTrace();
+//        }
+
+//        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("a.txt"));
+//        Employee e = null;
+//        e = (Employee)ois.readObject();
+//        System.out.println(e.name+e.address+e.age);
+
+//        PrintStream ps = new PrintStream("a.txt");
+////        System.setOut(ps);
+////        System.out.println(97);
+
+        
+
+
+
 
 
     }
