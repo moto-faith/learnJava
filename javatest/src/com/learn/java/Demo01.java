@@ -362,13 +362,45 @@ public class Demo01 {
 ////        System.setOut(ps);
 ////        System.out.println(97);
 
+//        doSomething(()-> System.out.println("Lambda执行"));
+
+//        String msgA = "hello ";
+//        String msgB = "world ";
+//        String msgC = "java";
+//        log(1,()->msgA+msgB+msgC);
+
+//        startThread(()-> System.out.println("线程任务执行"));
+
+//        List<String> list = new ArrayList<>();
+//        list.add("ass");
+//        list.add("ab");
+//        list.add("c");
+//        list.add("d");
+//        list.stream()
+//                .filter(s -> s.startsWith("a"))
+//                .filter(s -> s.length()>2)
+//                .forEach(System.out::println);
+
+
+
+
         
 
 
 
 
-
     }
+//    public static void startThread(Runnable task){
+//        new Thread(task).start();
+//    }
+//    public static void log(int level,MessageBuilder builder){
+//        if(level==1){
+//            System.out.println(builder.buildMessage());
+//        }
+//    }
+//    public static void doSomething(MyFuncationInterface inter){
+//        inter.method();
+//    }
 //    public static int getSum(int...arr){
 //        int sum = 0;
 //        for (int i : arr) {
