@@ -17,6 +17,8 @@ public class successServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = (User) request.getAttribute("user");
+
         response.getWriter().write("welcome "+user.getUsername()+" to my home!");
+
     }
 }

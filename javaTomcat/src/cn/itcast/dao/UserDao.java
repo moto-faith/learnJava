@@ -2,6 +2,7 @@ package cn.itcast.dao;
 
 import cn.itcast.domain.User;
 import cn.itcast.utils.JDBCUtils;
+
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,7 +12,7 @@ public class UserDao {
 
     public User login(User loginUser){
         try {
-            String sql = "select * from user where name = ? and password = ?";
+            String sql = "select * from user where username = ? and password = ?";
             User user = tem.queryForObject(sql,
                     new BeanPropertyRowMapper<User>(User.class),
                     loginUser.getUsername(), loginUser.getPassword());
@@ -19,6 +20,7 @@ public class UserDao {
         }catch (DataAccessException e){
             return null;
         }
+
     }
 
 }
