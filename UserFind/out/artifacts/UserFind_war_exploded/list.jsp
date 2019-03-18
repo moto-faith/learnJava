@@ -151,8 +151,15 @@
                     </c:if>
                 </c:forEach>
 
+                <c:if test="${pb.currentPage==pb.totalPage}">
+                <li class="disabled">
+
+                </c:if>
+                <c:if test="${pb.currentPage!=pb.totalPage}">
                 <li>
-                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage + 1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}" aria-label="Next">
+
+                 </c:if>
+                        <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage + 1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>

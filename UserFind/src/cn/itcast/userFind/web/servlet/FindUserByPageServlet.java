@@ -35,7 +35,7 @@ public class FindUserByPageServlet extends HttpServlet {
         }
 
         Map<String, String[]> condition = request.getParameterMap();
-        System.out.println(condition.keySet());
+
         UserService service = new UserServiceImpl();
         PageBean<User> pb = service.findUserByPage(currentPage,rows,condition);
 

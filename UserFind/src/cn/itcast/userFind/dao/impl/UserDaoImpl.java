@@ -107,7 +107,7 @@ public class UserDaoImpl implements UserDao {
         sb.append(" limit ? , ?");
         params.add(start);
         params.add(rows);
-        System.out.println(sb.toString());
+
         List<User> user = template.query(sb.toString(), new BeanPropertyRowMapper<User>(User.class),params.toArray());
         return user;
 

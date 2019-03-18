@@ -69,6 +69,7 @@ public class UserServiceImpl implements UserService {
         if (currentPage<=0){
             currentPage = 1;
         }
+
         PageBean<User> pb = new PageBean<>();
         pb.setCurrentPage(currentPage);
         pb.setRows(rows);
@@ -76,12 +77,17 @@ public class UserServiceImpl implements UserService {
         int totalCount = userDao.findTotalCount(condition);
         pb.setTotalCount(totalCount);
 
+        int totalPage = (totalCount%rows)==0?totalCount/rows:(totalCount/rows)+1;
+        pb.setTotalPage(totalPage);
+
+        if (currentPage>totalPage){
+            currentPage = totalPage;
+            pb.setCurrentPage(currentPage);
+        }
+
         int start = (currentPage-1)*rows;
         List<User> list = userDao.findByPage(start,rows,condition);
         pb.setList(list);
-
-        int totalPage = (totalCount%rows)==0?totalCount/rows:(totalCount/rows)+1;
-        pb.setTotalPage(totalPage);
 
         return pb;
     }
