@@ -22,14 +22,14 @@
         <input type="hidden" value="${user.id}" name="id">
         <div class="form-group">
             <label for="name">姓名：</label>
-            <input type="text" class="form-control" id="name" name="name" value="${user.name}"  readonly="readonly" placeholder="请输入姓名" />
+            <input type="text" class="form-control" id="name" name="name" value="${user.name}"  readonly="readonly"  />
         </div>
 
         <div class="form-group">
             <label>性别：</label>
             <c:if test="${user.gender == '男'}">
-            <input type="radio" name="gender" value="男" checked  />男
-            <input type="radio" name="gender" value="女"  />女
+                <input type="radio" name="gender" value="男" checked  />男
+                <input type="radio" name="gender" value="女"  />女
             </c:if>
             <c:if test="${user.gender == '女'}">
                 <input type="radio" name="gender" value="男"   />男
@@ -39,7 +39,7 @@
 
         <div class="form-group">
             <label for="age">年龄：</label>
-            <input type="text" class="form-control" id="age"  name="age" value="${user.age}" placeholder="请输入年龄" />
+            <input type="text" class="form-control" id="age"  name="age" value="${user.age}"  />
         </div>
 
         <div class="form-group">
@@ -65,12 +65,12 @@
 
         <div class="form-group">
             <label for="qq">QQ：</label>
-            <input type="text" class="form-control" id="qq" name="qq"  value="${user.qq}" placeholder="请输入QQ号码"/>
+            <input type="text" class="form-control" id="qq" name="qq"  value="${user.qq}" />
         </div>
 
         <div class="form-group">
             <label for="email">Email：</label>
-            <input type="text" class="form-control" id="email" name="email"  value="${user.email}" placeholder="请输入邮箱地址"/>
+            <input type="text" class="form-control" id="email" name="email"  value="${user.email}" />
         </div>
 
         <div class="form-group" style="text-align: center">

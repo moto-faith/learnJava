@@ -38,7 +38,7 @@ public class AddUserServlet extends HttpServlet {
 
         UserService userService = new UserServiceImpl();
         userService.add(user);
-        response.sendRedirect(request.getContextPath()+"/userListServlet");
+        response.sendRedirect(request.getContextPath()+"/findUserByPageServlet");
 
 
     }
