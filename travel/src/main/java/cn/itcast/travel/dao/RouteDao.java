@@ -12,6 +12,8 @@ import java.util.List;
  * Time: 16:57
  */
 public interface RouteDao {
-    public int findTotalCount(int cid);
-    public List<Route> findByPage(int cid,int start,int pageSize);
+    public int findTotalCount(int cid,String rname);
+    public List<Route> findByPage(int cid,int start,int pageSize,String rname);
+
+    Route findOne(int i);
 }
