@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--  name:模型的全名称-->
+    <class name="com.hibernate.domain.User" table="t_user">
+        <!-- name:模型属性名  -->
+        <id name="uid" column="id">
+            <!-- generator:id的生成策略
+                 native:如果是mysql数据库，id会自动增长
+             -->
+            <generator class="native"></generator>
+        </id>
+
+        <!-- 如果模型的属性和数据库的列名一样，就不用写column -->
+        <property name="username"></property>
+        <property name="password"></property>
+
+    </class>
+</hibernate-mapping>

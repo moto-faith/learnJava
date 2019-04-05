@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 1、配置数据库连接的4个参数 -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql:///hibernate_day1</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<!--  是否显示sql语句 -->
+		<property name="show_sql">true</property>
+		<!--  是否格式化sql语句 -->
+		<property name="format_sql">true</property>
+		<!--  是否自动提交事务 -->
+		<property name="hibernate.connection.autocommit">true</property>
+
+		<!-- 2、配置JavaBean与表的映射文件 -->
+		<mapping resource="com/hibernate/domain/User.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
