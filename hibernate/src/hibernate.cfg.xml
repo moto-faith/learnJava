@@ -13,11 +13,22 @@
 		<!--  是否显示sql语句 -->
 		<property name="show_sql">true</property>
 		<!--  是否格式化sql语句 -->
-		<property name="format_sql">true</property>
+		<!--<property name="format_sql">true</property>-->
 		<!--  是否自动提交事务 -->
 		<property name="hibernate.connection.autocommit">true</property>
+		<!-- hibernate.hbm2ddl.auto
+			配置映射文件与数据库表的关系
+			update:如果数据库有没表，自动帮你创表【常用】
+				      如果hbm与数据表不一样，会更新
+			create:每次启动hibernate都帮你创建表
+			create-drop,每次启动hibernate都帮你创建表,执行完后删除表
+			validate:检验hbm文件，如果与数据库的字符不一至，就抛出异常【过掉】
+		 -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
 
 		<!-- 2、配置JavaBean与表的映射文件 -->
 		<mapping resource="com/hibernate/domain/User.hbm.xml"/>
+		<mapping resource="com/hibernate/domain/Order.hbm.xml"/>
+		<mapping resource="com/hibernate/domain/Customer.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

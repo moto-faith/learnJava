@@ -4,10 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <!--  name:模型的全名称-->
-    <class name="com.hibernate.domain.User" table="t_user"
+    <class name="com.hibernate.domain.Customer" table="t_customer"
            dynamic-insert="true" dynamic-update="true">
         <!-- name:模型属性名  -->
-        <id name="uid" column="id">
+        <id name="id" >
             <!-- generator:id的生成策略
                  native:如果是mysql数据库，id会自动增长
              -->
@@ -15,10 +15,12 @@
         </id>
 
         <!-- 如果模型的属性和数据库的列名一样，就不用写column -->
-        <property name="username" type="string" length="16"></property>
-        <property name="password" length="6"></property>
-        <property name="gender"></property>
-        <property name="birthday" type="long"></property>
+        <property name="name"></property>
+        <set name="orders">
+            <key column="customer_id"></key>
+            <one-to-many class="com.hibernate.domain.Order"></one-to-many>
+        </set>
+
 
     </class>
 </hibernate-mapping>
