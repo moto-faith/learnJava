@@ -33,24 +33,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <file leaf-file-name="lesson2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hibernate/test/lesson2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="78">
+              <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lesson1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hibernate/test/lesson1.java">
+      <file leaf-file-name="Student.hbm.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Student.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="237">
+              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,10 +78,15 @@
         <option value="$PROJECT_DIR$/src/com/hibernate/domain/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/hibernate/domain/Customer.java" />
         <option value="$PROJECT_DIR$/src/com/hibernate/domain/Order.java" />
-        <option value="$PROJECT_DIR$/src/com/hibernate/domain/Customer.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/hibernate/domain/Order.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/hibernate/test/lesson1.java" />
+        <option value="$PROJECT_DIR$/src/com/hibernate/domain/Course.java" />
+        <option value="$PROJECT_DIR$/src/com/hibernate/domain/Student.java" />
+        <option value="$PROJECT_DIR$/src/com/hibernate/domain/Course.hbm.xml" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/com/hibernate/domain/Student.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/hibernate/domain/Customer.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/hibernate/test/lesson2.java" />
       </list>
     </option>
   </component>
@@ -104,7 +109,7 @@
     <option name="jreName" value="#JAVA_HOME" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="width" value="2142" />
     <option name="height" value="2092" />
@@ -140,9 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,7 +190,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.lesson1.test8">
+  <component name="RunManager" selected="JUnit.lesson2.test12">
     <configuration name="Tomcat 8.5.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="hibernate:war exploded">
@@ -319,106 +324,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="lesson1.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hibernate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hibernate" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson1" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="lesson1.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hibernate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hibernate" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson1" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="lesson1.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hibernate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hibernate" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson1" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="lesson1.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hibernate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hibernate" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson1" />
-      <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="lesson1.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -444,21 +349,121 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="lesson2.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hibernate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hibernate" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hibernate.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson2" />
+      <option name="METHOD_NAME" value="test10" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="lesson2.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hibernate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hibernate" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hibernate.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson2" />
+      <option name="METHOD_NAME" value="test11" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="lesson2.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hibernate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hibernate" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hibernate.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson2" />
+      <option name="METHOD_NAME" value="test12" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="lesson2.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hibernate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hibernate" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hibernate.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hibernate.test.lesson2" />
+      <option name="METHOD_NAME" value="test9" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.5.31" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.lesson1.test4" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.lesson1.test5" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.lesson1.test6" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.lesson1.test7" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.lesson1.test8" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.lesson2.test9" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.lesson2.test10" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.lesson1.test8" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.lesson2.test11" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.lesson2.test12" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.lesson1.test8" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.lesson1.test7" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.lesson1.test6" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.lesson1.test5" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.lesson1.test4" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.lesson2.test12" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.lesson2.test11" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.lesson1.test8" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.lesson2.test10" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.lesson2.test9" />
       </list>
     </recent_temporary>
   </component>
@@ -476,46 +481,50 @@
       <workItem from="1554456170155" duration="1037000" />
       <workItem from="1554507661810" duration="1315000" />
       <workItem from="1554622068987" duration="5934000" />
+      <workItem from="1554637508046" duration="41000" />
+      <workItem from="1554638362452" duration="199000" />
+      <workItem from="1554710220793" duration="8223000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="lesson1_test5 - 2019.04.07 at 17h 29m 34s.xml">
-      <configuration name="lesson1.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test5 - 2019.04.07 at 18h 33m 01s.xml">
-      <configuration name="lesson1.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test6 - 2019.04.07 at 18h 31m 47s.xml">
-      <configuration name="lesson1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test6 - 2019.04.07 at 18h 32m 50s.xml">
-      <configuration name="lesson1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test6 - 2019.04.07 at 18h 33m 36s.xml">
-      <configuration name="lesson1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test6 - 2019.04.07 at 18h 33m 53s.xml">
-      <configuration name="lesson1.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test7 - 2019.04.07 at 18h 36m 36s.xml">
-      <configuration name="lesson1.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test7 - 2019.04.07 at 18h 38m 04s.xml">
-      <configuration name="lesson1.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test7 - 2019.04.07 at 18h 38m 51s.xml">
-      <configuration name="lesson1.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="lesson1_test8 - 2019.04.07 at 18h 54m 24s.xml">
+    <history-entry file="lesson1_test8 - 2019.04.08 at 17h 59m 46s.xml">
       <configuration name="lesson1.test8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test10 - 2019.04.08 at 17h 56m 25s.xml">
+      <configuration name="lesson2.test10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test11 - 2019.04.08 at 18h 02m 25s.xml">
+      <configuration name="lesson2.test11" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test12 - 2019.04.08 at 18h 16m 10s.xml">
+      <configuration name="lesson2.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test12 - 2019.04.08 at 18h 18m 23s.xml">
+      <configuration name="lesson2.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test12 - 2019.04.08 at 18h 20m 47s.xml">
+      <configuration name="lesson2.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test12 - 2019.04.08 at 18h 23m 05s.xml">
+      <configuration name="lesson2.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test12 - 2019.04.08 at 18h 24m 00s.xml">
+      <configuration name="lesson2.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test12 - 2019.04.08 at 18h 24m 51s.xml">
+      <configuration name="lesson2.test12" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson2_test9 - 2019.04.08 at 17h 48m 36s.xml">
+      <configuration name="lesson2.test9" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17414000" />
+    <option name="totallyTimeSpent" value="25877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
+    <frame x="-6" y="-6" width="1933" height="1053" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -523,22 +532,22 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19626667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1424" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33152762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33152762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15413333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -600,189 +609,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/xun/4.框架/02.Hibernate/day02-20180419/代码/day02-20180419/src/com/gyf/hibernate/test/Lesson05.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1610">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/xun/4.框架/02.Hibernate/day02-20180419/代码/day02-20180419/src/com/gyf/hibernate/test/Lesson07.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/xun/4.框架/02.Hibernate/day02-20180419/代码/day02-20180419/src/com/gyf/hibernate/test/Lesson08.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
           <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-219">
           <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,9 +733,9 @@
         <state relative-caret-position="378">
           <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#301#308#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#301#308#0" expanded="false" />
+            <element signature="e#376#377#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,7 +745,7 @@
         <state relative-caret-position="321">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
-            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -933,10 +757,217 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1988">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="96" column="33" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/domain/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#304#313#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/domain/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#311#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/domain/Course.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="388">
+          <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-827">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-341">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson08.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="39" column="55" lean-forward="true" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson09.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/test/lesson1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="120" column="36" lean-forward="true" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/domain/Student.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Order.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/test/Lesson12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -955,29 +986,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://F:/xun/4.框架/02.Hibernate/day03-20180420/day03-20180420/src/com/gyf/hibernate/domain/Customer.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/28ef737a/cd0ad671-0b94-468e-96f6-a914a8b367cf/hibernate_day1.t_student_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Customer.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="486">
+          <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Order.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/test/lesson2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hibernate/test/lesson1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+        <state relative-caret-position="78">
+          <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Course.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hibernate/domain/Student.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -16,7 +16,7 @@
 
         <!-- 如果模型的属性和数据库的列名一样，就不用写column -->
         <property name="name"></property>
-        <set name="orders">
+        <set name="orders" inverse="true" batch-size="4" cascade="all-delete-orphan">
             <key column="customer_id"></key>
             <one-to-many class="com.hibernate.domain.Order"></one-to-many>
         </set>

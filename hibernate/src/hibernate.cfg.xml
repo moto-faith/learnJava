@@ -30,5 +30,7 @@
 		<mapping resource="com/hibernate/domain/User.hbm.xml"/>
 		<mapping resource="com/hibernate/domain/Order.hbm.xml"/>
 		<mapping resource="com/hibernate/domain/Customer.hbm.xml"/>
+		<mapping resource="com/hibernate/domain/Student.hbm.xml"/>
+		<mapping resource="com/hibernate/domain/Course.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

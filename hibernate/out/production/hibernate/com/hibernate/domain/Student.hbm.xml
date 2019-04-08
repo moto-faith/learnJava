@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hibernate.domain">
+    <!--  name:模型的全名称-->
+    <class name="Student" table="t_student" lazy="false">
+        <!-- name:模型属性名  -->
+        <id name="sid" column="id">
+            <generator class="native"></generator>
+        </id>
+
+        <!-- 如果模型的属性和数据库的列名一样，就不用写column -->
+        <property name="name"></property>
+
+        <set name="courses" table="t_student_course" cascade="save-update"
+        inverse="true" lazy="false" fetch="subselect">
+            <key column="sid"></key>
+            <many-to-many class="Course" column="cid"></many-to-many>
+        </set>
+
+
+    </class>
+</hibernate-mapping>

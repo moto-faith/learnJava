@@ -39,8 +39,8 @@ public class lesson1 {
 //        User user = new User("zhangsan", "123");
 //        user.setBirthday(new Date().getTime());
         User user = (User) session.get(User.class, 1);
-        user.setPassword("345");
-//        session.save(user);
+//        user.setPassword("345");
+        session.save(user);
 
         session.getTransaction().commit();
 
