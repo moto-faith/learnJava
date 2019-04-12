@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Spring" type="spring">
+    <CLASSES>
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-beans-3.2.0.RC2.jar!/" />
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-context-3.2.0.RC2.jar!/" />
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-core-3.2.0.RC2.jar!/" />
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-expression-3.2.0.RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
