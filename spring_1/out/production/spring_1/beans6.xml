@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xmlns xml namespace:xml命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p ="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--1.构造方法注入=属性值-->
+    <!--<bean id="stu" class="com.gyf.model.Student">
+        &lt;!&ndash; 相当调用 public Student(String username, String password) 构造方法&ndash;&gt;
+        <constructor-arg name="username" value="gyf"></constructor-arg>
+        <constructor-arg name="password" value="123"></constructor-arg>
+    </bean>-->
+
+   <!-- <bean id="stu" class="com.gyf.model.Student">
+        &lt;!&ndash; 相当调用 public Student(String username, int age) 构造方法&ndash;&gt;
+        <constructor-arg name="username" value="gyf"></constructor-arg>
+        <constructor-arg name="age" value="30"></constructor-arg>
+    </bean>-->
+
+    <!-- 通过索引加类型 给构造方法赋值-->
+    <!--<bean id="stu" class="com.gyf.model.Student">
+        <constructor-arg index="0" value="gyf" type="java.lang.String"></constructor-arg>
+        <constructor-arg index="1" value="30" type="int"></constructor-arg>
+            &lt;!&ndash;<constructor-arg index="1" value="30" type="java.lang.Integer"></constructor-arg>&ndash;&gt;
+    </bean>-->
+
+    <!-- 2.通过set方法往bean注入属性值-->
+    <!--<bean id="stu" class="com.gyf.model.Student">
+        <property name="username" value="gyf"></property>
+        <property name="password" value="123"></property>
+        <property name="age" value="12"></property>
+    </bean>-->
+
+
+    <!--3.通过p命名空间注入-->
+    <bean id="stu" class="com.itcast.model.Student"
+          p:username="xp" p:password="123" p:age="32"></bean>
+</beans>

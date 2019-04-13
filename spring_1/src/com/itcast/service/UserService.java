@@ -1,5 +1,7 @@
 package com.itcast.service;
 
+import com.itcast.model.User;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -8,5 +10,7 @@ package com.itcast.service;
  * Time: 18:25
  */
 public interface UserService {
+    void add(User user);
+
     public void add();
 }

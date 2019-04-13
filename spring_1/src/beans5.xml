@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user" class="com.itcast.model.User" init-method="myInit" destroy-method="myDestroy">
+        <property name="username" value="xupeng"></property>
+        <property name="password" value="123"></property>
+    </bean>
+
+    <!-- 配置bean处理器 -->
+    <bean id="beanProcess" class="com.itcast.model.MyBeanPostProcessor"></bean>
+</beans>
