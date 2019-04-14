@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xmlns xml namespace:xml命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--  配置UserService-->
+    <bean id="userService" class="com.itcast.service.UserServiceImpl"></bean>
+    <bean id="studentService" class="com.itcast.service.StudentService"></bean>
+
+    <!--  配置切面类对象-->
+    <bean id="myAspect" class="com.itcast.aspect.MyAspect"></bean>
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="myPoint" expression="execution(* com.itcast.service.*.*(..))"></aop:pointcut>
+        <aop:advisor advice-ref="myAspect" pointcut-ref="myPoint"></aop:advisor>
+    </aop:config>
+
+
+</beans>

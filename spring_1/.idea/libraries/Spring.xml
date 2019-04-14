@@ -6,8 +6,16 @@
       <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-context-3.2.0.RC2.jar!/" />
       <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-core-3.2.0.RC2.jar!/" />
       <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-expression-3.2.0.RC2.jar!/" />
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/com.springsource.org.aopalliance-1.0.0.jar!/" />
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/spring-aop-3.2.0.RC2.jar!/" />
+      <root url="file://F:/xun/4.框架/03.Spring/SpringJar" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://F:/xun/4.框架/03.Spring/SpringJar/com.springsource.org.aspectj.weaver-sources-1.6.8.RELEASE.jar!/" />
+      <root url="file://F:/xun/4.框架/03.Spring/SpringJar" />
+    </SOURCES>
+    <jarDirectory url="file://F:/xun/4.框架/03.Spring/SpringJar" recursive="false" />
+    <jarDirectory url="file://F:/xun/4.框架/03.Spring/SpringJar" recursive="false" type="SOURCES" />
   </library>
 </component>

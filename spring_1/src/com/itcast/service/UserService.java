@@ -13,4 +13,8 @@ public interface UserService {
     void add(User user);
 
     public void add();
+    public void addUser();
+    public void updateUser();
+    public void deleteUser();
+    public int deleteUser(int id);
 }

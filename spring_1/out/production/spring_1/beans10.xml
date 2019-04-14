@@ -4,18 +4,35 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p ="http://www.springframework.org/schema/p"
        xmlns:context ="http://www.springframework.org/schema/context"
+       xmlns:aop ="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
-                           http://www.springframework.org/schema/context/spring-context.xsd">
-    <!--1.在类中声明@Component 相当于配置了
-        <bean class="com.gyf.service.UserServiceImpl"></bean>
-    -->
-    <!--<bean id="userService" class="com.gyf.service.UserServiceImpl"></bean>-->
-    <!-- 开启注解-->
-    <context:annotation-config/>
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <!-- 注解的位置-->
-    <context:component-scan base-package="com.itcast"/>
 
+    <!--  配置UserService-->
+    <bean id="userService" class="com.itcast.service.UserServiceImpl"></bean>
+
+    <!-- 配置切面对象-->
+    <bean id="myAspect3" class="com.itcast.aspect.MyAspect3"></bean>
+
+    <!-- 配置 aop -->
+    <aop:config>
+        <!-- aop:指定切面-->
+        <aop:aspect ref="myAspect3">
+            <!--定义一个切入点-->
+            <aop:pointcut id="myPointcut" expression="execution(* com.itcast.service.UserServiceImpl.*(..))"/>
+
+            <!-- 配置前置通知...-->
+            <!--<aop:before method="myBefore" pointcut-ref="myPointcut" />-->
+
+            <!--<aop:after-returning method="myAfterReturning" pointcut-ref="myPointcut"/>-->
+
+            <!--配置环绕通知-->
+            <aop:around method="myRound" pointcut-ref="myPointcut"></aop:around>
+        </aop:aspect>
+    </aop:config>
 </beans>
