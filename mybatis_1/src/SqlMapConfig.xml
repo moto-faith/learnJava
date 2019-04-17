@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="db.properties"/>
+
+
+    <!--配置别名-->
+    <typeAliases>
+        <!--<typeAlias type="com.gyf.model.User" alias="user"></typeAlias>-->
+
+        <!--指定包名，别名就是类名，第一个小写 User 别名就是user-->
+        <package name="com.company.model"></package>
+        <package name="com.company.vo"></package>
+    </typeAliases>
+
+    <!-- 配置mybatis的环境信息 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 配置JDBC事务控制，由mybatis进行管理 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源，采用dbcp连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driverClass}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${name}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--告诉mybatis加载映射文件-->
+    <mappers>
+        <!--<mapper resource="com/company/model/User.xml"></mapper>-->
+
+        <!--第一种:写映射文件的名字-->
+        <!--<mapper resource="com/company/mapper/UserMapper.xml"></mapper>-->
+
+        <!--第二种:写类名,一定要有个映射文件与之对应
+        如果没有，那么在UserMapper要声明注解-->
+        <!--<mapper class="com.company.mapper.UserMapper"></mapper>-->
+
+        <!--第三种：可以写包名-->
+        <package name="com.company.mapper"></package>
+
+    </mappers>
+</configuration>
