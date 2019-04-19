@@ -1,0 +1,62 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+
+
+    <!-- 1.配置数据库，dbcp数据库连接池-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatisday1?useUnicode=true&amp;characterEncoding=utf8"/>
+        <property name="username" value="root"/>
+		<property name="password" value="root"/>
+
+        <!-- 最大连接  -->
+        <property name="maxActive" value="10"/>
+        <!--最大空闲数  -->
+        <property name="maxIdle" value="5"/>
+    </bean>
+
+    <!-- 2.配置会话工厂-->
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
+    </bean>
+
+
+    <!-- ===============配置dao的几种方式=================-->
+    <!--  第一种 -->
+    <!--3.传统配置dao，【现在不用】-->
+    <!--<bean id="userDao" class="com.itcast.dao.UserDaoImpl">
+        <property name="sqlSessionFactory" ref="sessionFactory"/>
+    </bean>-->
+
+    <!-- 第二种 -->
+    <!--4.由spring创建一个userMapper对象,使用工厂来创建-->
+   <!-- <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="sqlSessionFactory" ref="sessionFactory"/>
+        <property name="mapperInterface" value="com.itcast.mapper.UserMapper"/>
+    </bean>-->
+
+    <!-- 第三种 -->
+    <!-- 批量创建mapper的bean对象
+        内部会扫描指定包下的mapper,创建代理对象,名字就是类名，头字母改小写
+    -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.itcast.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
+    </bean>
+
+
+
+</beans>
