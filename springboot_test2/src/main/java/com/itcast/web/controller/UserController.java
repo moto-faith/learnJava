@@ -1,6 +1,12 @@
 package com.itcast.web.controller;
 
+
 import com.itcast.model.User;
+
+import com.itcast.test1.service.impl.UserServiceImpl;
+import com.itcast.test2.service.impl.CustomerServiceImpl;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,14 +22,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("user")
 public class UserController {
-    @RequestMapping("{id}")
+
+    @Autowired
+    private UserServiceImpl userService;
+
+    @RequestMapping("register")
     @ResponseBody
-    /**
-     * 通过id查询用户的信息
-     */
-    public User userInfo(@PathVariable() Integer id){
-        User user = new User("xp","123");
-        user.setId(id);
-        return user;
+    public String register(String username,String password){
+
+        userService.register(username,password);
+        return "success";
     }
+
+
+
 }
