@@ -1,12 +1,5 @@
 package com.itcast.aspect;
 
-/**
- * Created with IntelliJ IDEA.
- * Description:
- * User: 10640
- * Date: 2019-04-30
- * Time: 10:00
- */
 import java.util.Enumeration;
 
 import javax.servlet.http.HttpServletRequest;
