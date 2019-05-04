@@ -63,9 +63,26 @@ public class UserService {
         } catch (SQLException e) {
             throw new UserException("登录失败");
         }
+    }
 
+    public User findUserById(String id) throws UserException {
+        try {
+            User user = userDao.findUserById(id);
+            if (user==null){
+                throw new UserException("用户名不存在");
+            }
+            return user;
+        } catch (SQLException e) {
+            throw new UserException("查找用户失败");
+        }
+    }
 
-
+    public void modifyUserInfo(User user) throws UserException {
+        try {
+            userDao.modifyUserInfo(user);
+        } catch (SQLException e) {
+            throw new UserException("修改用户失败");
+        }
     }
 
 }

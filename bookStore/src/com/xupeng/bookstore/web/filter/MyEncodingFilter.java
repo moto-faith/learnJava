@@ -4,6 +4,7 @@ package com.xupeng.bookstore.web.filter;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
@@ -23,6 +24,11 @@ public class MyEncodingFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpServletResponse hes = (HttpServletResponse)response;
+        hes.setHeader("content-type","text/html;charset=utf-8");
+
+
+
         HttpServletRequest hsr = (HttpServletRequest)request;
         if(hsr.getMethod().equalsIgnoreCase("post")){
             request.setCharacterEncoding("UTF-8");

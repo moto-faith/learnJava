@@ -47,10 +47,21 @@ public class UserDao {
         qr.update(sql,activeCode);
     }
 
+    public void modifyUserInfo(User user) throws SQLException {
+        QueryRunner qr = new QueryRunner(C3P0Utils.getDataSource());
+        String sql = "update user set password = ?,gender = ?,telephone = ? where id = ?";
+        qr.update(sql,user.getPassword(),user.getGender(),user.getTelephone(),user.getId());
+    }
+
     public User findUserByUsernameAndPassword(String username,String password) throws SQLException {
         QueryRunner qr = new QueryRunner(C3P0Utils.getDataSource());
         String sql = "select * from user where username = ? and password = ?";
         return qr.query(sql,new BeanHandler<User>(User.class),username,password);
+    }
+    public User findUserById(String id) throws SQLException {
+        QueryRunner qr = new QueryRunner(C3P0Utils.getDataSource());
+        String sql = "select * from user where id = ?";
+        return qr.query(sql,new BeanHandler<User>(User.class),id);
     }
 
 }
