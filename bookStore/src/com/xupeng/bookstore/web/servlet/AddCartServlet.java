@@ -38,10 +38,10 @@ public class AddCartServlet extends HttpServlet {
         }
 
 
-        for(Map.Entry<Product, Integer> entry : cart.entrySet()){
-            System.out.println(entry.getKey() + "数量" + entry.getValue());
-        }
-        System.out.println("===============================");
+//        for(Map.Entry<Product, Integer> entry : cart.entrySet()){
+//            System.out.println(entry.getKey() + "数量" + entry.getValue());
+//        }
+//        System.out.println("===============================");
 
         request.getSession().setAttribute("cart",cart);
         String a1 = "<a href=\"" + request.getContextPath()+"/showProductByPage\">继续购物</a>";

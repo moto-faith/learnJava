@@ -2,6 +2,7 @@ package com.xupeng.bookstore.dao;
 
 import com.xupeng.bookstore.model.Product;
 import com.xupeng.bookstore.utils.C3P0Utils;
+import com.xupeng.bookstore.utils.ManagerThreadLocal;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
@@ -59,5 +60,10 @@ public class ProductDao {
     }
 
 
+    public void updatePNum(int id, int buynum) throws SQLException {
+        QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
+        String sql = "update products set pnum=pnum-? where id=?";
+        queryRunner.update(ManagerThreadLocal.getConnection(),sql,buynum,id);
 
+    }
 }

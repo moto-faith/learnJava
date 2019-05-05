@@ -7,8 +7,13 @@
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 
 
-
+<script type="text/javascript">
+	function createOrder() {
+        document.getElementById('orderForm').submit();
+    }
+</script>
 </head>
+
 
 
 <body class="main">
@@ -25,7 +30,7 @@
 							href="cart.jsp">&nbsp;购物车</a>&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;&nbsp;订单
 					</div>
 
-					<form id="orderForm" action="#" method="post">
+					<form id="orderForm" action="${pageContext.request.contextPath}/createOrder" method="post">
 						<table cellspacing="0" class="infocontent">
 							<tr>
 								<td><table width="100%" border="0" cellspacing="0">
@@ -84,7 +89,7 @@
 												<hr />
 												<p style="text-align:right">
 													<img src="images/gif53_029.gif" width="204" height="51"
-														border="0" />
+														border="0" onclick="createOrder()"/>
 												</p></td>
 										</tr>
 									</table></td>
