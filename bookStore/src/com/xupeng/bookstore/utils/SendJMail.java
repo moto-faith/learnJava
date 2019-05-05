@@ -20,9 +20,9 @@ import javax.mail.internet.MimeMessage;
  */
 public class SendJMail {
 	static final String smtphost = "smtp.163.com";//smtp服务器地址
-	static final String from = "15510133572@163.com"; // 邮件发送人的邮件地址
-	static final String username = "15510133572@163.com"; // 发件人的邮件帐户
-	static final String password = "XUpeng97623"; // 发件人的邮件密码
+	static final String from = "15555555555555@163.com"; // 邮件发送人的邮件地址
+	static final String username = "15555555555555@163.com"; // 发件人的邮件帐户
+	static final String password = "abcd"; // 发件人的邮件密码
 	
 	/**
 	 * 
