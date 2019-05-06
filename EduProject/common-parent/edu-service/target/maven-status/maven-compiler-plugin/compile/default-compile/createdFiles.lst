@@ -1,0 +1,4 @@
+com\xupeng\edu\service\IUserService.class
+com\xupeng\edu\service\base\IBaseService.class
+com\xupeng\edu\service\impl\UserServiceImpl.class
+com\xupeng\edu\service\base\BaseServiceImpl.class
